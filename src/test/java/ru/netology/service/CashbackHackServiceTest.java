@@ -10,23 +10,23 @@ public class CashbackHackServiceTest {
 
     @Test
     public void testRemainBelowBoundary() {
-      int actual = service.remain(500);
-      int expected = 500;
-      assertEquals(actual,expected);
+        int actual = service.remain(500);
+        int expected = 500;
+        assertEquals(actual, expected);
     }
 
     @Test
-    public void testRemainForBoundary(){
+    public void testRemainForBoundary() {
         int actual = service.remain(1000);
         int expected = 0;
-        assertEquals(actual,expected);
+        assertEquals(actual, expected);
     }
 
     @Test
-    public void testRemainAboveBoundary(){
+    public void testRemainAboveBoundary() {
         int actual = service.remain(1200);
         int expected = 800;
-        assertEquals(actual,expected);
+        assertEquals(actual, expected);
     }
 
 }
